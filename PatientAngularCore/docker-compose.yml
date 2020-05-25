@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  patientangularcore:
+    image: ${DOCKER_REGISTRY-}patientangularcore
+    build:
+      context: .
+      dockerfile: PatientAngularCore\Dockerfile
